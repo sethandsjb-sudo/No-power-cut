@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Power Cut | Solar Energy Solutions - Warakapola & Kadawatha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@450;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Sinhala', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-emerald-900 text-emerald-100 text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-phone-volume text-emerald-400 mr-1"></i> +94 70 706 6863</span>
+                <span><i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> +94 77 357 6129</span>
+                <span><i class="fa-solid fa-envelope text-emerald-400 mr-1"></i> nopowercut@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-emerald-800 px-3 py-0.5 rounded-full text-xs font-medium text-emerald-200">10 Year Replacement Warranty</span>
+                <button onclick="toggleLanguage()" id="langBtn" class="bg-amber-500 text-emerald-950 px-2.5 py-0.5 rounded text-xs font-bold hover:bg-amber-400 transition">EN / සිංහල</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-emerald-700 text-white p-2.5 rounded-xl shadow">
+                    <i class="fa-solid fa-solar-panel text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-emerald-900 tracking-tight">NO POWER CUT</h1>
+                    <p class="text-xs text-gray-500">Solar Energy Solutions</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="#home" class="hover:text-emerald-700 transition" data-en="Home" data-si="මුල් පිටුව">මුල් පිටුව</a>
+                <a href="#services" class="hover:text-emerald-700 transition" data-en="Systems" data-si="පද්ධති වර්ග">පද්ධති වර්ග</a>
+                <a href="#calculator" class="hover:text-emerald-700 transition" data-en="Savings Calculator" data-si="ලාභ ගණකයන්">ලාභ ගණකය</a>
+                <a href="#packages" class="hover:text-emerald-700 transition" data-en="Packages" data-si=" පැකේජ">පැකේජ</a>
+                <a href="#contact" class="hover:text-emerald-700 transition" data-en="Contact Us" data-si="සම්බන්ධ වන්න">සම්බන්ධ වන්න</a>
+            </div>
+            <div>
+                <a href="https://wa.me/94773576129" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-emerald-700/20 transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span data-en="WhatsApp Us" data-si="වට්ස්ඇප් ඔස්සේ">වට්ස්ඇප් ඔස්සේ</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-emerald-950 text-white overflow-hidden py-20 lg:py-32">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-emerald-800/80 text-emerald-300 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase border border-emerald-700">
+                    ✨ No Power Cut • No Electricity Bill
+                </span>
+                <h2 class="text-4xl lg:text-6xl font-bold mt-6 leading-tight" data-en="Power Your Life with Reliable Solar Energy" data-si="විදුලි බිලෙන් නිදහස් වී සූර්ය බලයෙන් ඔබේ නිවස නඩත්තු කරන්න">
+                    විදුලි බිලෙන් නිදහස් වී සූර්ය බලයෙන් ඔබේ නිවස නඩත්තු කරන්න
+                </h2>
+                <p class="mt-6 text-gray-300 text-lg leading-relaxed" data-en="Professional solar power installations in Warakapola and Kadawatha. On-grid, Off-grid, and Hybrid systems backed by a 10-year replacement warranty." data-si="වරකපොළ සහ කඩවත ප්‍රදේශවල විශ්වාසනීය සෝලා පද්ධති ස්ථාපනය කිරීම. On-grid, Off-grid සහ Hybrid පද්ධති සඳහා වසර 10ක වගකීමක් සමඟින්.">
+                    වරකපොළ සහ කඩවත ප්‍රදේශවල විශ්වාසනීය සෝලා පද්ධති ස්ථාපනය කිරීම. On-grid, Off-grid සහ Hybrid පද්ධති සඳහා වසර 10ක වගකීමක් සමඟින්.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#calculator" class="bg-amber-500 hover:bg-amber-400 text-emerald-950 font-bold px-8 py-3.5 rounded-xl shadow-lg transition" data-en="Calculate Savings" data-si="ලාභය ගණනය කරන්න">ලාභය ගණනය කරන්න</a>
+                    <a href="#contact" class="bg-emerald-800 hover:bg-emerald-700 text-white font-medium px-8 py-3.5 rounded-xl border border-emerald-700 transition" data-en="Get a Quote" data-si="මිල ගණන් විමසන්න">මිල ගණන් විමසන්න</a>
+                </div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-3xl border border-white/10 shadow-2xl">
+                <h3 class="text-xl font-bold text-amber-400 mb-4" data-en="Why Choose No Power Cut?" data-si="අපව තෝරාගැනීමට හේතු:">අපව තෝරාගැනීමට හේතු:</h3>
+                <ul class="space-y-4 text-gray-200">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <div>
+                            <strong class="block text-white" data-en="10-Year Replacement Warranty" data-si="වසර 10ක මාරු කර ලබාදීමේ වගකීම">වසර 10ක මාරු කර ලබාදීමේ වගකීම</strong>
+                            <span class="text-sm text-gray-300" data-en="Inverters and batteries backed by comprehensive replacement guarantees." data-si="Inverter සහ බැටරි සඳහා විශ්වාසනීය වගකීම් කාලයක්.">Inverter සහ බැටරි සඳහා විශ්වාසනීය වගකීම් කාලයක්.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <div>
+                            <strong class="block text-white" data-en="Expert Installation & Service" data-si="විශේෂඥ තාක්ෂණික සේවය">විශේෂඥ තාක්ෂණික සේවය</strong>
+                            <span class="text-sm text-gray-300" data-en="Professional setups across Warakapola and Kadawatha." data-si="වරකපොළ සහ කඩවත ශාඛා හරහා ක්ෂණික සේවාව.">වරකපොළ සහ කඩවත ශාඛා හරහා ක්ෂණික සේවාව.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <div>
+                            <strong class="block text-white" data-en="Custom System Options" data-si="විශේෂිත පද්ධති තේරීම්">විශේෂිත පද්ධති තේරීම්</strong>
+                            <span class="text-sm text-gray-300" data-en="Tailored On-Grid, Off-Grid, and Hybrid options for homes & businesses." data-si="On-Grid, Off-Grid සහ Hybrid ක්‍රමවේද ඔබගේ අවශ්‍යතාවයට අනුව.">On-Grid, Off-Grid සහ Hybrid ක්‍රමවේද ඔබගේ අවශ්‍යතාවයට අනුව.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-emerald-900" data-en="Our Solar System Options" data-si="අප ලබා දෙන සෝලා පද්ධති වර්ග">අප ලබා දෙන සෝලා පද්ධති වර්ග</h2>
+            <p class="text-gray-600 mt-2" data-en="Choose the perfect setup to eliminate your electricity bill completely." data-si="ඔබේ විදුලි බිල සම්පූර්ණයෙන්ම ශුන්‍ය කර ගැනීමට සුදුසුම පද්ධතිය තෝරාගන්න.">ඔබේ විදුලි බිල සම්පූර්ණයෙන්ම ශුන්‍ය කර ගැනීමට සුදුසුම පද්ධතිය තෝරාගන්න.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 hover:shadow-md transition">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-emerald-900 mb-3" data-en="On-Grid Systems" data-si="On-Grid පද්ධති">On-Grid පද්ධති</h3>
+                <p class="text-gray-600 text-sm leading-relaxed" data-en="Ideal for grid-connected properties looking to dramatically reduce monthly electricity bills through Net Metering / Net Accounting." data-si="විදුලිබල මණ්ඩලයට සම්බන්ධ කරමින් මාසික බිල අඩු කර ගැනීමට සහ අතිරික්ත විදුලිය පද්ධතියට විකිණීමට වඩාත්ම උචිතය.">විදුලිබල මණ්ඩලයට සම්බන්ධ කරමින් මාසික බිල අඩු කර ගැනීමට සහ අතිරික්ත විදුලිය පද්ධතියට විකිණීමට වඩාත්ම උචිතය.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 hover:shadow-md transition">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+                <h3 class="text-xl font-bold text-emerald-900 mb-3" data-en="Off-Grid Systems" data-si="Off-Grid පද්ධති">Off-Grid පද්ධති</h3>
+                <p class="text-gray-600 text-sm leading-relaxed" data-en="Complete independence with battery storage ensuring power supply even during grid outages." data-si="විදුලිබල මණ්ඩලයෙන් ස්වාධීනව බැටරි ආධාරයෙන් 24 පැය පුරාම නිරන්තර විදුලි සැපයුමක් ලබා දෙන පද්ධතියකි.">විදුලිබල මණ්ඩලයෙන් ස්වාධීනව බැටරි ආධාරයෙන් 24 පැය පුරාම නිරන්තර විදුලි සැපයුමක් ලබා දෙන පද්ධතියකි.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 hover:shadow-md transition">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-emerald-900 mb-3" data-en="Hybrid Systems" data-si="Hybrid පද්ධති">Hybrid පද්ධති</h3>
+                <p class="text-gray-600 text-sm leading-relaxed" data-en="The best of both worlds: grid connectivity with battery backup protection for uninterrupted power and savings." data-si="සාමාන්‍ය විදුලිය ලැබෙන අතරතුර බැටරි බැකප් පහසුකම සහිතව විදුලි කප්පාදුවලින් සම්පූර්ණ ආරක්ෂාව සපයන උසස්ම ක්‍රමයයි.">සාමාන්‍ය විදුලිය ලැබෙන අතරතුර බැටරි බැකප් පහසුකම සහිතව විදුලි කප්පාදුවලින් සම්පූර්ණ ආරක්ෂාව සපයන උසස්ම ක්‍රමයයි.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="bg-emerald-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-emerald-950 p-8 lg:p-12 rounded-3xl border border-emerald-800 shadow-2xl">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl lg:text-3xl font-bold" data-en="Solar Savings Calculator" data-sI="සෝලා ඉතුරුම් ගණකය">සෝලා ඉතුරුම් ගණකය</h2>
+                <p class="text-emerald-300 text-sm mt-2" data-en="Estimate your solar capacity and monthly savings based on your electricity bill." data-si="ඔබේ මාසික විදුලි බිල ඇතුළත් කර කොපමණ මුදලක් ඉතිරි කරගත හැකිදැයි බලන්න.">ඔබේ මාසික විදුලි බිල ඇතුළත් කර කොපමණ මුදලක් ඉතිරි කරගත හැකිදැයි බලන්න.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <label class="block text-sm font-medium text-emerald-200 mb-2" data-en="Average Monthly Electricity Bill (LKR)" data-si="මාසික සාමාන්‍ය විදුලි බිල (රු.)">මාසික සාමාන්‍ය විදුලි බිල (රු.)</label>
+                    <input type="number" id="billInput" value="15000" class="w-full bg-emerald-900 border border-emerald-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400 text-lg font-semibold" oninput="calculateSolar()">
+                </div>
+                <div class="bg-emerald-900/80 p-6 rounded-2xl border border-emerald-700 space-y-3">
+                    <div class="flex justify-between items-center border-b border-emerald-800 pb-2">
+                        <span class="text-emerald-300 text-sm" data-en="Recommended System Size:" data-si="ප්‍රශස්ත පද්ධති ප්‍රමාණය:">ප්‍රශස්ත පද්ධති ප්‍රමාණය:</span>
+                        <span id="sysSize" class="text-xl font-bold text-amber-400">3 kW</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-emerald-800 pb-2">
+                        <span class="text-emerald-300 text-sm" data-en="Estimated Monthly Savings:" data-si="ඇස්තමේන්තුගත මාසික ඉතිරිය:">ඇස්තමේන්තුගත මාසික ඉතිරිය:</span>
+                        <span id="monthlySave" class="text-xl font-bold text-emerald-400">Rs. 13,500</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-emerald-300 text-sm" data-en="Estimated Annual Savings:" data-si="වාර්ෂික ඉතිරිය:">වාර්ෂික ඉතිරිය:</span>
+                        <span id="yearlySave" class="text-xl font-bold text-amber-400">Rs. 162,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-emerald-900" data-en="Popular Solar Packages" data-si="ജനප්‍රිය සෝලා පැකේජ">ජනප්‍රිය සෝලා පැකේජ</h2>
+            <p class="text-gray-600 mt-2" data-en="High-efficiency components backed by our 10-year replacement warranty." data-si="වසර 10ක මාරු කර ලබාදීමේ වගකීමක් සහිත උසස් තත්වයේ සෝලා පැකේජ.">වසර 10ක මාරු කර ලබාදීමේ වගකීමක් සහිත උසස් තත්වයේ සෝලා පැකේජ.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold" data-en="Small Homes" data-si="කුඩා නිවාස සඳහා">කුඩා නිවාස සඳහා</span>
+                    <h3 class="text-2xl font-bold text-emerald-900 mt-4">3 kW <span class="text-sm font-normal text-gray-500" data-en="On-Grid" data-si="On-Grid">On-Grid</span></h3>
+                    <p class="text-gray-600 text-sm mt-2" data-en="Best for monthly bills around Rs. 8,000 - 15,000" data-si="රු. 8,000 - 15,000 අතර මාසික බිල්පත් සඳහා සුදුසුය.">රු. 8,000 - 15,000 අතර මාසික බිල්පත් සඳහා සුදුසුය.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> High-efficiency Panels</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Premium Inverter</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> 10-Year Replacement Warranty</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/94773576129?text=I%20am%20interested%20in%203kW%20Solar%20Package" target="_blank" class="mt-8 block text-center bg-emerald-50 hover:bg-emerald-700 hover:text-white text-emerald-800 font-medium py-3 rounded-xl transition" data-en="Inquire Now" data-si="විමසන්න">විමසන්න</a>
+            </div>
+            <div class="bg-emerald-900 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between relative">
+                <div class="absolute -top-3 right-6 bg-amber-500 text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase" data-en="Most Popular" data-si="වැඩිම ඉල්ලුම">වැඩිම ඉල්ලුම</div>
+                <div>
+                    <span class="bg-emerald-800 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold" data-en="Standard Homes" data-si="සාමාන්‍ය නිවාස සඳහා">සාමාන්‍ය නිවාස සඳහා</span>
+                    <h3 class="text-2xl font-bold mt-4">5 kW <span class="text-sm font-normal text-emerald-300" data-en="Hybrid / On-Grid" data-si="Hybrid / On-Grid">Hybrid / On-Grid</span></h3>
+                    <p class="text-emerald-200 text-sm mt-2" data-en="Best for monthly bills around Rs. 15,000 - 30,000" data-si="රු. 15,000 - 30,000 අතර මාසික බිල්පත් සඳහා සුදුසුය.">රු. 15,000 - 30,000 අතර මාසික බිල්පත් සඳහා සුදුසුය.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-emerald-200">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Tier-1 Solar Panels</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Advanced Hybrid Inverter</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> 10-Year Replacement Warranty</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/94773576129?text=I%20am%20interested%20in%205kW%20Solar%20Package" target="_blank" class="mt-8 block text-center bg-amber-500 hover:bg-amber-400 text-emerald-950 font-bold py-3 rounded-xl transition" data-en="Inquire Now" data-si="විමසන්න">විමසන්න</a>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold" data-en="Large Homes & Businesses" data-si="විශාල නිවාස හා ව්‍යාපාරික ස්ථාන">විශාල නිවාස හා ව්‍යාපාරික ස්ථාන</span>
+                    <h3 class="text-2xl font-bold text-emerald-900 mt-4">10 kW <span class="text-sm font-normal text-gray-500" data-en="Three Phase" data-si="Three Phase">Three Phase</span></h3>
+                    <p class="text-gray-600 text-sm mt-2" data-en="Best for monthly bills above Rs. 30,000" data-si="රු. 30,000 ට වැඩි මාසික බිල්පත් සඳහා සුදුසුය.">රු. 30,000 ට වැඩි මාසික බිල්පත් සඳහා සුදුසුය.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> High-capacity Panels</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Commercial Grade Inverter</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> 10-Year Replacement Warranty</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/94773576129?text=I%20am%20interested%20in%2010kW%20Solar%20Package" target="_blank" class="mt-8 block text-center bg-emerald-50 hover:bg-emerald-700 hover:text-white text-emerald-800 font-medium py-3 rounded-xl transition" data-en="Inquire Now" data-si="විමසන්න">විමසන්න</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Branch Info -->
+    <section id="contact" class="bg-gray-100 py-20 px-4 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-emerald-900" data-en="Contact Our Offices" data-si="අපගේ ශාඛා හා සම්බන්ධ වන්න">අපගේ ශාඛා හා සම්බන්ධ වන්න</h2>
+                <p class="text-gray-600 mt-2" data-en="Visit or call our offices in Warakapola and Kadawatha for expert solar consultation." data-si="විශේෂඥ උපදෙස් ලබා ගැනීමට වරකපොළ සහ කඩවත අපගේ කාර්යාල වෙත පැමිණෙන්න හෝ අමතන්න.">විශේෂඥ උපදෙස් ලබා ගැනීමට වරකපොළ සහ කඩවත අපගේ කාර්යාල වෙත පැමිණෙන්න හෝ අමතන්න.</p>
+                <div class="mt-8 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 flex items-start gap-4">
+                        <div class="bg-emerald-50 text-emerald-700 p-3.5 rounded-xl text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-emerald-900 text-lg" data-en="Warakapola Branch" data-si="වරකපොළ ශාඛාව">වරකපොළ ශාඛාව</h3>
+                            <p class="text-gray-600 text-sm mt-1">No.166, Railway Station Road, Warakapola, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100 flex items-start gap-4">
+                        <div class="bg-emerald-50 text-emerald-700 p-3.5 rounded-xl text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-emerald-900 text-lg" data-en="Kadawatha Branch" data-si="කඩවත ශාඛාව">කඩවත ශාඛාව</h3>
+                            <p class="text-gray-600 text-sm mt-1">No.163, Ragama Road, Kadawatha, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-emerald-100">
+                <h3 class="text-xl font-bold text-emerald-900 mb-6" data-en="Quick Inquiry Form" data-si="ක්ෂණික විමසීම් පෝරමය">ක්ෂණික විමසීම් පෝරමය</h3>
+                <form onsubmit="submitForm(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-en="Your Name" data-si="ඔබේ නම">ඔබේ නම</label>
+                        <input type="text" id="custName" required class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-700">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-en="Phone Number" data-si="දුරකථන අංකය">දුරකථන අංකය</label>
+                        <input type="tel" id="custPhone" required class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-700">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-en="Average Monthly Bill (LKR)" data-si="මාසික විදුලි බිල (රු.)">මාසික විදුලි බිල (රු.)</label>
+                        <input type="text" id="custBill" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-700">
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3.5 rounded-xl transition shadow-lg shadow-emerald-700/20" data-en="Send Message via WhatsApp" data-si="වට්ස්ඇප් හරහා යොමු කරන්න">වට්ස්ඇප් හරහා යොමු කරන්න</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-emerald-300 py-10 px-4 border-t border-emerald-900 text-center text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 No Power Cut. All Rights Reserved.</p>
+            <div class="flex gap-6">
+                <span><i class="fa-solid fa-phone mr-1"></i> +94 70 706 6863</span>
+                <span><i class="fa-brands fa-whatsapp mr-1"></i> +94 77 357 6129</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let currentLang = 'si';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'si' ? 'en' : 'si';
+            const elements = document.querySelectorAll('[data-si]');
+            elements.forEach(el => {
+                if (el.tagName === 'INPUT') {
+                    el.placeholder = el.getAttribute(`data-${currentLang}`);
+                } else {
+                    el.textContent = el.getAttribute(`data-${currentLang}`);
+                }
+            });
+        }
+
+        function calculateSolar() {
+            const bill = parseFloat(document.getElementById('billInput').value) || 0;
+            let size = "3 kW";
+            if (bill > 30000) size = "10 kW";
+            else if (bill > 15000) size = "5 kW";
+            
+            const monthlySave = Math.round(bill * 0.9);
+            const yearlySave = monthlySave * 12;
+
+            document.getElementById('sysSize').textContent = size;
+            document.getElementById('monthlySave').textContent = "Rs. " + monthlySave.toLocaleString();
+            document.getElementById('yearlySave').textContent = "Rs. " + yearlySave.toLocaleString();
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const bill = document.getElementById('custBill').value;
+            
+            const text = `Hello No Power Cut,\nMy Name: ${name}\nPhone: ${phone}\nMonthly Bill: Rs. ${bill}\nI want more info about solar installation.`;
+            window.open(`https://wa.me/94773576129?text=${encodeURIComponent(text)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
